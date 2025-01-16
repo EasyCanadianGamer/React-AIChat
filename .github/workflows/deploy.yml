@@ -39,6 +39,6 @@ jobs:
         with:
           project: "canadiangam-react-aicha-69"
           entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
-          root: "dist"
+          root: "build"
           
           
