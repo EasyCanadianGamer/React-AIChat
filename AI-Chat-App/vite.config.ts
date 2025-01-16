@@ -7,7 +7,4 @@ export default defineConfig({
   server: {
     port: 5000, // Change this to your desired port number
   },
-  optimizeDeps: {
-    include: ["regenerator-runtime"],
-  },
 })
