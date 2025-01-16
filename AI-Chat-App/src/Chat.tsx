@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import Input from "./Input";
 import ReactMarkdown from "react-markdown";
 import { debounce } from "lodash";
 
 function Chat() {
-  const [result, setResult] = useState("");
-  const [prompt, setPrompt] = useState("");
+  const [ ,setResult] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [conversation, setConversation] = useState<{ role: string; text: string }[]>([]);
