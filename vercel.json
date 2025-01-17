@@ -1,25 +1,25 @@
 {
     "builds": [
       {
-        "src": "JARVIS/**/*",
+        "src": "JARVIS/package.json", 
         "use": "@vercel/static-build",
         "config": {
           "distDir": "dist" 
         }
       },
       {
-        "src": "backend/server.js",
+        "src": "Backend/server.js", 
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
-        "src": "/api/(.*)",
-        "dest": "backend/server.js"
+        "src": "/api/(.*)", 
+        "dest": "Backend/server.js"
       },
       {
-        "src": "/(.*)",
-        "dest": "frontend/dist/$1"
+        "src": "/(.*)", 
+        "dest": "JARVIS/dist/$1"
       }
     ]
   }
