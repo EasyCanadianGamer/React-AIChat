@@ -8,7 +8,7 @@ import rateLimit from 'express-rate-limit';
 dotenv.config();
 
 const app = express();
-const PORT = 5001;
+const PORT = 3000;
 
 // Enable CORS for all routes
 app.use(cors());

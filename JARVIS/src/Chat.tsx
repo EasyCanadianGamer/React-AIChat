@@ -159,7 +159,7 @@ console.log ( AccuratelocationPrompt);
     if (searchCache[query]) return searchCache[query]; // Return cached results
     const locationQuery = city;
 
-    const proxyUrl = `http://localhost:5001/api/search?q=${encodeURIComponent(query)}${locationQuery}`;
+    const proxyUrl = `${import.meta.env.VITE_BACKEND}/api/search?q=${encodeURIComponent(query)}${locationQuery}`;
 
     try {
       const response = await fetch(proxyUrl);
