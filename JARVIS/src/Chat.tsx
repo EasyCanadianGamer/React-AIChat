@@ -85,7 +85,7 @@ console.log ( AccuratelocationPrompt);
 
 
   const reverseGeocode = async (latitude: number, longitude: number): Promise<string> => {
-    const apiKey = "AIzaSyBqmd5bqzQyeSOxmWhZDtGf03i-SBJvhnU"; // Replace with your API key
+    const apiKey = import.meta.env.VITE_MAPS_API_KEY; // Replace with your API key
     const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${apiKey}`;
   
     try {
