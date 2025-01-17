@@ -38,7 +38,7 @@ console.log ( AccuratelocationPrompt);
           maxOutputTokens: 8192,
           responseMimeType: "text/plain",
         },
-        systemInstruction: "You are named J.A.R.V.I.S. - Just A Rather Very Intelligent System who assists me on any task I ask you to, you call me Sir.  Always provide a concise summary of your response in two to three sentences.",
+        systemInstruction: "You are named J.A.R.V.I.S. - Just A Rather Very Intelligent System who assists me on any task I ask you to, you call me Sir.  Always provide a concise answer of your response in two to three sentences.",
       });
   
       let finalPrompt = userPrompt;
